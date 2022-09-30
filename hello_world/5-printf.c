@@ -1,8 +1,6 @@
 #include <stdio.h>
 /**
  *main - Entry point
- *
- * Description: 'Just print string'
  *     
  *Return: Always 0 (Success)
  */
