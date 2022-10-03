@@ -1,9 +1,19 @@
 #include <stdio.h>
-int main()
-printf("\nLowercase characters : \n");
-for (ch ='a';ch <= 'z'; ch++)
-{ i
-printf("%c ", ch);
-}
-return 0;
+/**
+ * main - Entry point
+ *
+ * Description: 'prints the alphabet in lowercase, followed by a new line'
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+
+	putchar('\n');
+
+	return (0);
 }
