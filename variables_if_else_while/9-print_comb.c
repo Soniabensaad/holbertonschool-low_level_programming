@@ -11,6 +11,10 @@ int main(void)
 int letter;
 for (letter = '0'; letter <= '9'; letter++)
 {
+if letter =='9'
+{
+continue;
+}
 putchar(',');
 putchar(' ');
 }
