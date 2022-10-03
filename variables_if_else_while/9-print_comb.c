@@ -8,15 +8,17 @@
 
 int main(void)
 {
-int letter;
-for (letter = '0'; letter <= '9'; letter++)
+int let;
+
+for (let = '0'; let <= '9'; let++)
 {
-if (letter != '0')
+if (let != '0')
 {
 putchar(',');
 putchar(' ');
 }
-putchar(letter);
+putchar(let);
+}
 putchar('\n');
 return (0);
 }
