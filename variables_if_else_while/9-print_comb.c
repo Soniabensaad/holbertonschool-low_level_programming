@@ -13,8 +13,6 @@ for (letter = '0'; letter <= '9'; letter++)
 {
 if (letter != '0')
 {
-continue;
-}
 putchar(',');
 putchar(' ');
 }
