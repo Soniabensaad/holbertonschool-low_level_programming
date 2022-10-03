@@ -23,10 +23,10 @@ int main(void)
         {
           prinf("%d is positive\n", n);
 
-        return (0);
+	}
 	else
         {
           prinf("%d is zero\n", n);
-
+	}
         return (0);
 }
