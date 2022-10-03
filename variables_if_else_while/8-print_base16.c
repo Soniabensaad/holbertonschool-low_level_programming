@@ -8,16 +8,11 @@
 
 int main(void)
 {
-	int letter;
-        for (letter = '0'; letter <= '9'; letter++)
-	{
-		putchar(letter);
-	}
-
-	for (letter = 'a'; letter <= 'f'; letter++)
-	{
-		putchar(letter);
-	}
-	putchar('\n');
-	return (0);
+int letter;
+for (letter = '0'; letter <= '9'; letter++)
+putchar(letter);
+for (letter = 'a'; letter <= 'f'; letter++)
+putchar(letter);
+putchar('\n');
+return (0);
 }
