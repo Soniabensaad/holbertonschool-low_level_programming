@@ -1,10 +1,12 @@
-#include "main.h"
+#include"main.h"
 /**
- * main - Prints putchar
+ * print_alphabet_x10 - Entry point
  *
- * Return: Always 0
+ * Description: Prints Putchar
+ *
+ * Return: Always void (Success)
  */
-int main(void)
+int _putchar(char c)
 {
 	_putchar('_');
 	_putchar('p');
