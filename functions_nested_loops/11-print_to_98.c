@@ -1,15 +1,19 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* print_to_98 - check the code for Holberton School students.
+* print_to_98 - prints all natural numbers from n to 98.
+*
 * @n: integer
 *
+* Description:prints all natural numbers
+*
+* return : always 0 
 */
 void print_to_98(int n)
 {
 for ( ; n < 98; n++)
-printf("%d, ", n);
+_putchar("%d, ", n);
 for ( ; n > 98; n--)
-printf("%d, ", n);
-printf("%d\n", 98);
+_putchar("%d, ", n);
+_putchar("%d\n", 98);
 }
