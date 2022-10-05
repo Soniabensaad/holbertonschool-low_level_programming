@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- * print lowercase or uppercase character - Entry point
+ * _isalpha -checks for alphabetic character
  *
- * Description: check for lowercase or uppercase character
+ * @c:int
  *
- * Return: Always void (Success)
+ * Return: Always 0
  */
 int _isalpha(int c)
 {
 
-if ((c >= 'a'&& c <= 'z'= | | (c >= 'A' && c <= 'Z'))
-{	
-return (1);
+if ((c >= 'a'&& c <= 'z') || (c >= 'A' && c <= 'Z'))
+{
+        return (1);
 }
  
 return (0);
-	
 }
