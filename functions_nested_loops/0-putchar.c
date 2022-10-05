@@ -2,11 +2,9 @@
 #include <unistd.h>
 int _putchar(char c);
 /**
- *_putchar - print putchar  
+ * main - Prints "_putchar" followed by a new line.
  *
- * main - will print putchar
- *
- * Return: 0 
+ * Return: Always 0.
  */
 int main(void)
 {
