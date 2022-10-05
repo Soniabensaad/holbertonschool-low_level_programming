@@ -15,6 +15,6 @@ int n;
 for ( ; n < 98; n++)
 _putchar("%d, ", n);
 for ( ; n > 98; n--)
-_putchar("%d, ", n);
-_putchar("%d\n", 98);
+write("%d, ", n);
+write("%d\n", 98);
 }
