@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print lowercase character - Entry point
+ * _islower :print lowercase character
  *
- * Description: check for lowercase character
+ * @c: input lowercase character
  *
  * Return: Always void (Success)
  */
