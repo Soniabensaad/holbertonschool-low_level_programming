@@ -19,17 +19,17 @@ _putchar(' ');
 }
 if (a > 9)
 {
-_putchar(a / 10 + 48);
-_putchar(a % 10 + 48);
+_putchar(a / 10 + '0');
+_putchar(a % 10 + '0');
 }
 else if (j == 0)
 {
-_putchar(a + 48);
+_putchar(a + '0');
 }
 else
 {
 _putchar(' ');
-_putchar(a + 48);
+_putchar(a + '0');
 }
 }
 _putchar('\n');
