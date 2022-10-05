@@ -6,14 +6,14 @@
  *
  * Return: Always void (Success)
  */
-int _islower(int c);
+int _islower(int c)
 {
-if (c >= 'a' & & c <= 'z')
-{
-	return (1);
-
-else 
-{
-	return (0);
-}
+	if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
