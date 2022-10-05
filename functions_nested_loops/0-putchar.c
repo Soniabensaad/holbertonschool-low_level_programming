@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <unistd.h>
-int _putchar(char c);
+#include "main.h"
 /**
  * main - Prints "_putchar" followed by a new line.
  *
