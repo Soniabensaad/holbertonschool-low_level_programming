@@ -3,7 +3,7 @@
 /**
  * _last_digit - prints the  last digit of a number
  *
- * @n:int
+ * @r:int
  *
  * Return: Always 0
  */
