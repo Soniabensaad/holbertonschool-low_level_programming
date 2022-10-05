@@ -2,11 +2,11 @@
 #include <unistd.h>
 int _putchar(char c);
 /**
- * print putchar - Entry point
+ *_putchar - print putchar  
  *
- * Description: Prints Putchar
+ * main - will print putchar
  *
- * Return: Always void (Success)}
+ * Return: 0 
  */
 int main(void)
 {
