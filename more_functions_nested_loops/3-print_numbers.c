@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _numbers -prints the numbers
+ * print_numbers -prints the numbers
  *
  * Description: prints the numbers, from 0 to 9, followed by a new line.
  *
