@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - check the code
  *
@@ -8,47 +9,35 @@
  *
  * Return: void
  */
-int main (void)
+int main (void) 
 {
 int n;
-for (n =1; n < 101; n++)
+
+for (n = 1; n < 101; n++)
 {
-    if (n % 3 == 0 && n % 5 == 0)
-    {
-        _putchar('F');
-        _putchar('i');
-        _putchar('z');
-        _putchar('z');
-        _putchar('B');
-        _putchar('u');
-        _putchar('z');
-        _putchar('z');
-    }
-    else if (n % 3 == 0)
-    {   _putchar('F');
-        _putchar('i');
-        _putchar('z');
-        _putchar('z');
-
-    }
-    else if (n % 5 == 0)
-    {   _putchar('B');
-        _putchar('u');
-        _putchar('z');
-        _putchar('z');
-
-    }
-    else 
-
-    {
-        _putchar(n +'0');
-    }
-    if (n != 100)
-    {
-        _putchar(' ');
-    }
+if (n % 3 == 0 && n % 5 == 0)
+{ 
+printf("FizzBuzz");       
 }
-_putchar('\n');
+else if (n % 3 == 0)
+{ 
+printf("Fizz"); 
+
+}
+else if (n % 5 == 0)
+{  
+printf("Buzz");  
+}
+else 
+{
+printf("%d", n);
+}
+if (n != 100)
+{
+putchar(' ');
+}
+}
+putchar('\n');
 return(0);
 }
 
