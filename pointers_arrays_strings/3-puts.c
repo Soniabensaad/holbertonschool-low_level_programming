@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strlen -prints a string, followed by a new line.
+ * _puts -prints a string, followed by a new line.
  *
  * @str:char
  *
