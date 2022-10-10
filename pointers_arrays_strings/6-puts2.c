@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * puts2 -prints prints every other character of a string
- * 
+ *
  * @str:char
  *
  * Description: prints every other character of a string
@@ -17,7 +17,7 @@ while (str[length] != '\0')
 {
 length++;
 }
-for(i = 0; i < length ; i += 2)
+for(i = 0; i < length; i += 2)
 {
 _putchar(str[i]);
 }
