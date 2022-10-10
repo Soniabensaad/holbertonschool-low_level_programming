@@ -3,9 +3,9 @@
 /**
  * _strlen -prints a string, followed by a new line.
  *
- * @s:char
+ * @str:char
  *
- * Description: function that prints a string, followed by a new line, to stdout
+ * Description: function that prints a string, followed by a new line
  *
  * Return: 0
  */
