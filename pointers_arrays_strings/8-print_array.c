@@ -4,6 +4,7 @@
  * print_array -prints n elements of an array of integers
  *
  * @str:char
+ * @a: char
  *
  * Description:  a function that prints n elements of an array of integers
  *
