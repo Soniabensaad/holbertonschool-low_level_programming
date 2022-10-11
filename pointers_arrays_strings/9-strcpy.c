@@ -3,8 +3,8 @@
 /**
  * _strcpy -copies the string pointed
  *
- * @str:char
- * @a: char
+ * @dest:char
+ * @src: char
  *
  * Description:  a function that copies the string pointed
  *
@@ -13,7 +13,7 @@
 char *_strcpy(char *dest, char *src)
 {
 int index = 0;
-do{ 
+do {
 *(dest + index) = *(src + index);
 } while (*(src + index++));
 return (dest);
