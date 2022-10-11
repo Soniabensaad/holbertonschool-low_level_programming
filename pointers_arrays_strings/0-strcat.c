@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strcpy -concatenates two strings
+ * _strcpy - prints concatenates two strings
  *
  * @dest:char
  * @src: char
@@ -16,13 +16,14 @@ int i, j;
 i = 0;
 while (dest[i] != '\0')
 {
-    i++;
+i++;
 }
 for (j = 0; src[j] != '\0'; j++)
 {
-    dest[i+j] = src[j];
+dest[i+j] = src[j];
 }
 dest[i + j] = '\0';
 return(dest);
 }
+
 
