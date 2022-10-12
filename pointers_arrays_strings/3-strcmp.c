@@ -3,8 +3,6 @@
 /**
  * _strcmp- compares two strings..
  *
- * @s:char
- *
  * Description:   a function that compares two strings.
  *
  * Return: void
