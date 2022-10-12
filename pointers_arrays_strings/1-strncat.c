@@ -17,14 +17,14 @@ i = 0;
 j = 0;
 while (*(dest + i) != '\0')
 {
-    i++;
+i++;
 }
 while (j < n && *(src + j))
 {
-    *(dest + i) = *(src + j);
-    i++;
-    j++;
+*(dest + i) = *(src + j);
+i++;
+j++;
 }
-
 return (dest);
 }
+
