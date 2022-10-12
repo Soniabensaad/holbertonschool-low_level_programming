@@ -16,6 +16,7 @@ int i = 0;
 do {
 *(dest + i) = *(src + i);
 } while (i < n && *(src + i++));
+*(dest + i) = '\0';
 return (dest);
 }
 
