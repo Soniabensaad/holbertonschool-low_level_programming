@@ -15,9 +15,9 @@ int sous = 0;
 int i;
 while (sous == 0 && *s1 && *s2)
 {
-    sous = *(s1++) - *(s2++);
-    i++;
+sous = *(s1++) - *(s2++);
+i++;
 }
 return (sous++);
-
 }
+
