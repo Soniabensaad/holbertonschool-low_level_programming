@@ -3,7 +3,8 @@
 /**
  * reverse_array-reverses the content of an array of integers
  *
- * @s:char
+ * @a:char
+ * @n:integer
  *
  * Description:a function that reverses the content of an array of integers.
  *
