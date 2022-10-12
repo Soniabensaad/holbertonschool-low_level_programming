@@ -4,7 +4,6 @@
  *string_touppe-changes all lowercase letters of a string to uppercase
  *
  * @s:char
- * @n:integer
  *
  * Description:a function that changes all lowercase of a string to uppercase.
  *
