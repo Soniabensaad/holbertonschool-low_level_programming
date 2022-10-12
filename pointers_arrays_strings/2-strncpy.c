@@ -5,6 +5,7 @@
  *
  * @dest:char
  * @src: char
+ * @n: integer
  *
  * Description:  a function that copies the string pointed
  *
