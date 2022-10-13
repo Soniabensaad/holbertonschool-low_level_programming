@@ -5,7 +5,6 @@
  *
  * @s: char
  * @c:char
- * 
  *
  * Description: a function that locates a character in a string.
  *
