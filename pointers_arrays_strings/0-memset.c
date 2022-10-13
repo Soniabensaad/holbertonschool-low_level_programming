@@ -5,7 +5,7 @@
  *
  * @s: char
  * @n:number of spaces to fill
- * @d:byte to fill with
+ * @b:byte to fill with
  *
  * Description: function fills the first n bytes of the memory
  *
