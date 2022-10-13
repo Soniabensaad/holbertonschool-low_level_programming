@@ -3,9 +3,9 @@
 /**
  * _memcpy- copies n bytes from memory to another.
  *
- * @s: char
+ * @src: char
  * @n:number of spaces to fill
- * @b:byte to fill with
+ * @dest:char
  *
  * Description: function that copies n bytes from memory to another.
  *
