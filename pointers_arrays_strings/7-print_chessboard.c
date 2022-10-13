@@ -4,9 +4,9 @@
  * print_chessboard - prints the chessboard.
  *
  * @a: double table
- * 
+ *
  * Description: a function that prints the chessboard.
- * 
+ *
  * Return: 0
 */
 
