@@ -7,7 +7,7 @@
  * @n:number of spaces to fill
  * @d:byte to fill with
  *
- * Description: function fills the first n bytes of the memory 
+ * Description: function fills the first n bytes of the memory
  *
  * Return: 0
  */
