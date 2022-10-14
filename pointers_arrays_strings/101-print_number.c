@@ -1,14 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * rot13 - encodes a string using rot13.
+ * print_number - function with one argument
+ * 
+ * @n: int type argument
  *
- * @rot13: char
- * @alphabet:char
- * @str:char
- *
- * Description: a function that encodes a string using rot13.
- * Return: 0
+ * Description: prints an integer
+ * 
+ * Return: value of n
 */
 void print_number(int b)
 {
