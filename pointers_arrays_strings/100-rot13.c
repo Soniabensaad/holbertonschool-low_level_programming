@@ -5,7 +5,7 @@
  *
  * @rot13: char
  * @alphabet:char
- * @s:char
+ * @str:char
  *
  * Description: a function that encodes a string using rot13.
  * Return: 0
