@@ -4,7 +4,7 @@
  * factorial-returns returns the factorial of a given number.
  *
  * @n:integer
- * 
+ *
  * Description: 'returns the factorial of a given number.'
  *
  * Return: int
