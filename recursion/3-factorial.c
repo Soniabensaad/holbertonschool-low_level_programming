@@ -3,11 +3,11 @@
 /**
  * factorial-returns returns the factorial of a given number.
  *
- *@n: integer
+ * @n:integer
+ * 
+ * Description: 'returns the factorial of a given number.'
  *
- *Description:a function that  returns the factorial of a given number.
- *
- * return: int
+ * Return: int
  */
 int factorial(int n)
 {
