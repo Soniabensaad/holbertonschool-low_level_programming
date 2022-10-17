@@ -7,7 +7,7 @@
  *
  *Description:a function that  returns the factorial of a given number.
  *
- * return 0
+ * return :int
  */
 int factorial(int n)
 {
