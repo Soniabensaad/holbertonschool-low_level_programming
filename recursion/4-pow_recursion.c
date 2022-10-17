@@ -1,14 +1,10 @@
 #include "main.h"
 
 /**
- * int _pow_recursion- returns the value of x raised to the power of y.
- *
- * @x:integer
- * @y:integr
- *
- * Description: returns the value of x raised to the power of y.
- *
- * Return: return the number after calculation
+* _pow_recursion - a function that calculate x raised by y
+* @x:the official integer
+* @y:the raised integer
+* Return: return the number after calculation
  */
 int _pow_recursion(int x, int y)
 {
