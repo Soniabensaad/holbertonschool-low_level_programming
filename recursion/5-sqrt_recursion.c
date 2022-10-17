@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * sqrt_check - checks for the square root of c
+ * sqrt_check - checks for the square verify of c
  * @a:guess at sqrt
  * @b: number to find sqrt of
  *
- *Description: checks for the square root of c
+ *Description: checks for the square verify of c
  *
  * Return: -1 or sqrt of b
  */
