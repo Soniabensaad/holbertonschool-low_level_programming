@@ -3,11 +3,11 @@
 /**
  * _strlen_recursion-returns the length of a string
  *
- *@s: char
+ *@s : pointer of string
  *
- *Description:a function that  returns the length of a string.
+ * Description: 'returns the length of a string.'
  *
- * return 0
+ * Return: int
  */
 int _strlen_recursion(char *s)
 {
