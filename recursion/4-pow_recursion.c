@@ -6,9 +6,9 @@
  * @x:integer
  * @y:integr
  *
- * Description: ' returns the value of x raised to the power of y.'
+ * Description: returns the value of x raised to the power of y.
  *
- * Return: int
+ * Return: return the number after calculation
  */
 int _pow_recursion(int x, int y)
 {
