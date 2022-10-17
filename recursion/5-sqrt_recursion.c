@@ -4,6 +4,8 @@
  * @a:guess at sqrt
  * @b: number to find sqrt of
  *
+ *Description: checks for the square root of c
+ *
  * Return: -1 or sqrt of b
  */
 int sqrt_verify(int a, int b)
