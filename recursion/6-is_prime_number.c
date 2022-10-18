@@ -4,7 +4,7 @@
  *
  *@i: counter
  *@n:integer
-
+ *
  *Description: returns 1 if the input integer is a prime
  *
  * Return: 1 or 0
