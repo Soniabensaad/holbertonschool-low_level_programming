@@ -1,4 +1,17 @@
 #include "main.h"
+int length (char*s)
+{
+    int i;
+    i = 1;
+    if(*s != '\0')
+    {
+        s++;
+        return (i + length(s));
+
+    }
+    return (0);
+
+}
 /**
  * prime_check - returns 1 if the input integer is a prime
  *
@@ -9,22 +22,18 @@
  *
  * Return: 1 or 0
  */
-int check_palindrome(char str)
+int check(char*s, int i, int j)
 {
-    char = str[];
-    int a ;
-    int b = strlen(str - 1);
-    if (b > a)
+    if (i > j)
     {
-        str[a++] != str[b--];
-        return (0);
-    }
-    else
-    {
-        str[a++] = str[b--];
-        return (0);
-    }
+        return (1);
 
+    }
+    if (*(s + i) == *(s + j))
+    {
+        return (check(s, ++i, --j));
+    }
+    return (0);
 }
 /**
  * prime_check - returns 1 if the input integer is a prime
@@ -38,5 +47,5 @@ int check_palindrome(char str)
  */
 int is_palindrome(char *s)
 {
-    return (check_palindrome(char*str));
+    return (check(s, 0, length(s) -1));
 }
