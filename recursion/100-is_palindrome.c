@@ -4,11 +4,11 @@
 *@s: string
 *Return: length of str
 */
-int length (char*s)
+int length(char *s)
 {
 int i;
 i = 1;
-if(*s != '\0')
+if (*s != '\0')
 {
 s++;
 return (i + length(s));
@@ -25,7 +25,7 @@ return (0);
  *
  * Return: check
  */
-int check(char*s, int i, int j)
+int check(char *s, int i, int j)
 {
 if (i > j)
 {
@@ -50,5 +50,5 @@ return (0);
  */
 int is_palindrome(char *s)
 {
-return (check(s, 0, length(s) -1));
+return (check(s, 0, length(s) - 1));
 }
