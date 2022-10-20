@@ -20,6 +20,8 @@ return (0);
  * check - checks a palindrome
  *@s: char
  *@check: char
+ *@i:integer
+ *@j:integer
  *
  *Description: checks palindrome
  *
