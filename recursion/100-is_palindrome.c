@@ -1,51 +1,54 @@
 #include "main.h"
+/**
+*length - 0
+*@s: string
+*Return: length of str
+*/
 int length (char*s)
 {
-    int i;
-    i = 1;
-    if(*s != '\0')
-    {
-        s++;
-        return (i + length(s));
-
-    }
-    return (0);
-
+int i;
+i = 1;
+if(*s != '\0')
+{
+s++;
+return (i + length(s));
 }
+return (0);
+}
+
 /**
- * prime_check - returns 1 if the input integer is a prime
+ * check - checks a palindrome
+ *@s: char
+ *@check: char
  *
- *@i: counter
- *@n:integer
+ *Description: checks palindrome
  *
- *Description: returns 1 if the input integer is a prime
- *
- * Return: 1 or 0
+ * Return: check
  */
 int check(char*s, int i, int j)
 {
-    if (i > j)
-    {
-        return (1);
-
-    }
-    if (*(s + i) == *(s + j))
-    {
-        return (check(s, ++i, --j));
-    }
-    return (0);
+if (i > j)
+{
+return (1);
 }
+if (*(s + i) == *(s + j))
+{
+return (check(s, ++i, --j));
+}
+return (0);
+}
+
 /**
- * prime_check - returns 1 if the input integer is a prime
+ * is_palindrome - returns 1 if the input integer is a prime
  *
- *@i: counter
- *@n:integer
+ *@length:integer
+ *@s:char
  *
- *Description: returns 1 if the input integer is a prime
+ *Description: returns if the input char is a palindrome or not
  *
- * Return: 1 or 0
+ * Return: palindrome
  */
 int is_palindrome(char *s)
 {
-    return (check(s, 0, length(s) -1));
+return (check(s, 0, length(s) -1));
 }
