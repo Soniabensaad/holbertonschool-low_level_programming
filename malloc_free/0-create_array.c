@@ -3,7 +3,6 @@
 /**
  * create_array - creates an array of chars
  *
- * @A: pointer
  * @size:integer
  * @c:pointer of array
  *
