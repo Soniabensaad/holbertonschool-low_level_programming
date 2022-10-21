@@ -11,47 +11,44 @@
  * Return: pointer or NULL
  */
 
-char *str_concat(char *str1, char *str2)
+char *str_concat(char *s1, char *s2)
 {
-    char *s;
-    int a, b, k, e;
-    a = 0;
-    b = 0;
-    
+	char *p;
+	int i, j, r;
 
-    
-
-    if (str1 == NULL)
-    {
-        return (NULL);
-    }
-    if (str2 == NULL)
-    {
-        return (NULL);
-    }
-    while (str1[a] != '\0')
-    {
-        a++;
-    }
-    while (str2[b] != '\0')
-    {
-        b++;
-    }
-    s = malloc(a + b + 1 * sizeof((char)));
-    if (s == NULL)
-    {
-        return (NULL);
-    }
-   for (k = 0, e = 0; k < a + b; k++)
+	i = 0;
+	j = 0;
+	r = 0;
+	if (s1 != NULL)
 	{
-		if (k < a)
-			s[k] = str1[k];
-		else
-            
-			s[k] = str2[e++];
-            
+		while (s1[i])
+		{
+			i++;
+		}
+	}
+	if (s2 != NULL)
+	{
+		while (s2[j])
+		{
+			j++;
+		}
+	}
+	p = malloc((i + j + 1) * sizeof(char));
+	if (p == NULL)
+	{
+		return (NULL);
 	}
 
-    return(s);
-    
+	while (r < i)
+	{
+		p[r] = s1[r];
+		r++;
+	}
+	while (r < i + j)
+	{
+		p[r] = s2[r - i];
+		r++;
+	}
+	p[r + 1] = '\0';
+	return (p);
 }
