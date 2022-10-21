@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- *_concat - returns a concat of string
+ *str_concat - returns a concat of string
  *
  * @str1: char
  * @str2: char
