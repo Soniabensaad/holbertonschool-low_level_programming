@@ -1,13 +1,13 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _strdup - returns a pointer copy of string
+ * str_concat - returns  pointer concat s1 and s2
  *
  * @str1: char
  * @str2: char
  *
- * Description: a function that returns a pointer copy of string
- * 
+ * Description: a function that returns  pointer concat s1 and s2
+ *
  * Return: pointer or NULL
  */
 
@@ -34,7 +34,7 @@ while (str2[b] != '\0')
 {
 b++;
 }
-s = malloc(a * sizeof(*str1) + b * sizeof(*str2) +1);
+s = malloc(a * sizeof(* str1) + b * sizeof(* str2) + 1);
 if (s == NULL)
 {
 return (NULL);
@@ -50,5 +50,5 @@ s[k] = str2[k - a];
 k++;
 }
 s[k] = '\0';
-return(s);   
+return (s);
 }
