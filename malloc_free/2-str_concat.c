@@ -34,7 +34,7 @@ while (str2[b] != '\0')
 {
 b++;
 }
-s = malloc(a * sizeof(* str1) + b * sizeof(* str2) + 1);
+s = malloc(a * sizeof(*str1) + b * sizeof(*str2) + 1);
 if (s == NULL)
 {
 return (NULL);
