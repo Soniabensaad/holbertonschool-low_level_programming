@@ -4,7 +4,8 @@
  * _strdup - returns a pointer copy of string
  *
  * @size:integer
- * @a:pointer of array
+ * @a:pointer of char
+ * @str: char
  *
  * Description: a function that returns a pointer copy of string
  * Return: pointer or NULL
@@ -40,7 +41,7 @@ char *_strdup(char *str)
 		a[j] = str[j];
 		j++;
 	}
-    return (a);
+return (a);
 }
 
 
