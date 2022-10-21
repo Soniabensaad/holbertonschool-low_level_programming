@@ -49,6 +49,6 @@ while (k < a + b)
 s[k] = str2[k - a];
 k++;
 }
-s[k] = '\0';
+s[k + 1] = '\0';
 return (s);
 }
