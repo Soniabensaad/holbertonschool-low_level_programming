@@ -11,7 +11,7 @@
  * Return: pointer or NULL
  */
 
-    char *str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 	char *a;
 	int i, j, r;
