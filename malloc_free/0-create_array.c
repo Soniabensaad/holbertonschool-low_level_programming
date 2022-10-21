@@ -1,10 +1,11 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * create_array - creates an array of chars, and initializes it with a specific char
+ * create_array - creates an array of chars
  *
- * @A: pointer 
+ * @A: pointer
  * @size:integer
+ * @c:pointer of array
  *
  * Description: a function that creates an array of chars,
  *
