@@ -3,8 +3,6 @@
 /**
  * _strdup - returns a pointer copy of string
  *
- * @size:integer
- * @a:pointer of char
  * @str: char
  *
  * Description: a function that returns a pointer copy of string
