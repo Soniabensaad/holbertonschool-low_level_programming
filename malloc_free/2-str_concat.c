@@ -7,7 +7,7 @@
  * @str2: char
  *
  * Description: a function that returns a concat of string
- * 
+ *
  * Return: pointer or NULL
  */
 
