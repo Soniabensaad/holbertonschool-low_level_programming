@@ -17,7 +17,6 @@ char *str_concat(char *str1, char *str2)
     int a, b, k, e;
     a = 0;
     b = 0;
-    k = 0;
     e = k - a;
 
     
