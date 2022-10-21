@@ -1,57 +1,44 @@
-#include <stdlib.h>
 #include "main.h"
+
 /**
- * _strdup - returns a pointer copy of string
+ * str_concat - Entry point
  *
- * @str1: char
- * @str: char
+ * @s1 : string
+ * @s2 : string
  *
- * Description: a function that returns a pointer copy of string
- * 
- * Return: pointer or NULL
+ * Description: 'concatenates two strings.'
+ *
+ * Return: string
  */
-
-char *str_concat(char *str1, char *str2)
+char *str_concat(char *s1, char *s2)
 {
-    char *s;
-    int a, b, k, e;
-    a = 0;
-    b = 0;
-    e = k - a;
+	int a = 0, b = 0, c, d;
+	char *s;
 
-    
+	if (s1 == 0)
+		s1 = "";
 
-    if (str1 == NULL)
-    {
-        return (NULL);
-    }
-    if (str2 == NULL)
-    {
-        return (NULL);
-    }
-    while (str1[a] != '\0')
-    {
-        a++;
-    }
-    while (str2[b] != '\0')
-    {
-        b++;
-    }
-    s = malloc(a * sizeof(*str1) + b * sizeof(*str2) +1);
-    if (s == NULL)
-    {
-        return (NULL);
-    }
-   for (k = 0, e = 0; k < a + b; k++)
+	if (s2 == 0)
+		s2 = "";
+
+	while (s1[a] != '\0')
+		a++;
+
+	while (s2[b] != '\0')
+		b++;
+
+	s = malloc(a * sizeof(*s1) + b * sizeof(*s2) + 1);
+
+	if (s == 0)
+		return (NULL);
+
+	for (c = 0, d = 0; c < a + b; c++)
 	{
-		if (k < a)
-			s[k] = str1[k];
+		if (c < a)
+			s[c] = s1[c];
 		else
-            
-			s[k] = str2[e++];
-            
+			s[c] = s2[d++];
 	}
 
-    return(s);
-    
+	return (s);
 }
