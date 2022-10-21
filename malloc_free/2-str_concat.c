@@ -51,7 +51,7 @@ char *str_concat(char *str1, char *str2)
         s[k] = str2[k - a];
         k++;
     }
-    s[k] = '\0';
+    
     return(s);
     
 }
