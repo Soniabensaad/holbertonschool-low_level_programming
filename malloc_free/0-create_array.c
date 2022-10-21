@@ -1,14 +1,14 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * wildcmp - a function that compares two strings and returns 1 or 0
+ * create_array - creates an array of chars, and initializes it with a specific char
  *
- * @a : char
- * @b:char
+ * @A: pointer 
+ * @size:integer
  *
- * Description: compares two strings and returns 1 or 0
+ * Description: a function that creates an array of chars,
  *
- * Return: 1 or 0
+ * Return: pointer or NULL
  */
 char *create_array(unsigned int size, char c)
 {
