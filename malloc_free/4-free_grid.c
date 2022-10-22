@@ -1,23 +1,21 @@
-#include <stdlib.h>
 #include "main.h"
-/**
- *alloc_grid - nested loop to make grid
- *
- *@width: width input
- * @height: height input
- *
- * Description: nested loop to make grid
- *
- * Return: pointer to 2
- */
 
+/**
+ * free_grid - Entry point
+ *
+ * @grid : int[][]
+ * @height : integer
+ *
+ * Description: 'frees a 2 dimensional grid.'
+ *
+ * Return: void
+ */
 void free_grid(int **grid, int height)
 {
-	int i;
-
-	if (grid == NULL || height <= 0)
-		return;
-	for (i = 0; i < height; i++)
-		free(grid[(height - 1) - i]);
-	free(grid);
+	if (grid != NULL && height != 0)
+	{
+		while (height >= 0)
+			free(grid[height--]);
+		free(grid);
+	}
 }
