@@ -1,14 +1,14 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- *str_concat - returns a concat of string
+ *alloc_grid - nested loop to make grid
  *
- * @str1: char
- * @str2: char
+ *@width: width input
+ * @height: height input 
  *
- * Description: a function that returns a concat of string
+ * Description: nested loop to make grid
  *
- * Return: pointer or NULL
+ * Return: pointer to 2
  */
 int **alloc_grid(int width, int height)
 {
