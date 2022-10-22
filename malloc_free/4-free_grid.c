@@ -13,13 +13,10 @@
 
 void free_grid(int **grid, int height)
 {
-	int i;
-	int *p;
-
-	for (i = 0; i < height; i++)
-	{
-		p = grid[i];
-		free(p);
-	}
-	free(grid);
+    int i;
+    for (i = height - 1; i >= 0; i--)
+    {
+        free(grid[i]);
+    }
+    free(grid);
 }
