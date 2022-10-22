@@ -10,17 +10,13 @@
  *
  * Return: pointer to 2
  */
+
 void free_grid(int **grid, int height)
 {
-	int i;
-    if (grid != NULL || height != 0)
-    {
-        
-	for (i = 0; i < height; i++)
+	if (grid != NULL && height != 0)
 	{
-		free(grid[i]);
+		while (height >= 0)
+			free(grid[height--]);
+		free(grid);
 	}
-	free(grid);
-    }
-
 }
