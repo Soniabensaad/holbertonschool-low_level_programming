@@ -12,33 +12,43 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int **iarray;
-	int i, n;
+	int **p;
+	int i, j;
 
 	if (width <= 0 || height <= 0)
-		return (NULL);
-
-	iarray = malloc(sizeof(int) * height);
-
-	if (iarray == NULL)
 	{
-		free(iarray);
 		return (NULL);
 	}
-
-	for (i = 0; i < height; i++)
+	i = 0;
+	p = malloc(width * sizeof(p));
+	if (p == NULL)
 	{
-		iarray[i] = malloc(sizeof(int) * width);
-		if (iarray == NULL)
+		return (NULL);
+	}
+	while (i < height)
+	{
+		p[i] = malloc(height * sizeof(p[i]));
+		if (p[i] == NULL)
 		{
-			free(iarray);
+			for (j = 0; j < i; ++j)
+			{
+				free(p[j]);
+			}
+			free(p);
 			return (NULL);
 		}
-
-		for (n = 0; n < width; n++)
-		{
-			iarray[i][n] = 0;
-		}
+		i++;
 	}
-	return (iarray);
+	i = 0;
+	while (i < width)
+	{
+		j = 0;
+		while (j < height)
+		{
+			p[j][i] = 0;
+			j++;
+		}
+		i++;
+	}
+	return (p);
 }
