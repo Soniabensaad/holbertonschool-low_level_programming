@@ -4,8 +4,8 @@
 
 /**
  * argstostr - concatenates all the arguments of your program.
- * @len: integer
- * @s: char.
+ * @ac: int input
+ * @av: double pointer array.
  *
  */
 char *argstostr(int ac, char **av)
