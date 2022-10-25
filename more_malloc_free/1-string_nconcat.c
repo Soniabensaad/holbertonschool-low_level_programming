@@ -6,6 +6,7 @@
  *  string_nconcat- Allocates memory
  * @s1: char
  * @s2: char
+ * @n: unsigned int
  * Return: Nothing.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
