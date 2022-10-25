@@ -42,7 +42,6 @@ if (s == NULL)
 {
 return (NULL);
 }
-i = 0;
 while (i < len)
 {
 for (i = 0; i < char1; i++)
@@ -51,10 +50,10 @@ s[i] = s1[i];
 }
 for (i = char1; i < char1 + n; i++)
 {
-s[i] = s2[i-char1];   
+s[i] = s2[i - char1];   
 }
 }
 s[i] = '\0';
-return (s);   
- }
+return (s);
+}
 
