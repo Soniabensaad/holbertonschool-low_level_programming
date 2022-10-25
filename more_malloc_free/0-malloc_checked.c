@@ -6,7 +6,7 @@
  * malloc_checked- allocates memory using malloc
  * @s: size of allocation
  *
- *Return : Nothing
+ *Return :Nothing
  */
 
 void *malloc_checked(unsigned int s)
