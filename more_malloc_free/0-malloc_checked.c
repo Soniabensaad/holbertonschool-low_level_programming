@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked- allocates memory using malloc
- * @s: size of allocation
- *
- *Return :Nothing
- */
+ * malloc_checked - Allocates memory
+  * @b: the size to allocate
+  *
+  * Return: Nothing.
+  */
 
 void *malloc_checked(unsigned int s)
 {
