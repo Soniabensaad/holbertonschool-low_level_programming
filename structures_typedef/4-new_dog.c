@@ -1,69 +1,75 @@
 #include "dog.h"
-#include <stdlib.h>
-
-
 
 /**
- * print_dog - Initializes a dog structure
- * @d: A dog structure.
+ * strCheck - second function
  *
- * Return: Nothing
+ * @str: string
+ *
+ * Description: 'set string'
+ *
+ * Return: string
  */
-char *scopy (char *t)
+char *strCheck(char *str)
 {
-    int i = 0, j = 0;
-    char *m;
-    if (t == NULL)
-    {
-        return (NULL);
-    }
-    
-    while (t[i] != '\0')
-    {
-        i++;
-    }
-    m = malloc(sizeof(*t));
-    if (m == NULL)
-    {
-        return(NULL);
-    }
-    while (t[j] != '\0')
-    {
-        m[j] = t[j];
-        j++;
-    }
-    m[j] = '\0';
-    return (m);
+	int i = 0, j = 0;
+	char *p;
+
+	if (str == NULL)
+		return (NULL);
+
+	while (*(str + i) != '\0')
+		i++;
+
+	p = malloc(i + 1);
+
+	if (p == NULL)
+		return (NULL);
+
+	while (str[j] != '\0')
+	{
+		p[j] = str[j];
+		j++;
+	}
+
+	p[j] = '\0';
+
+	return (p);
 }
+
 /**
- * print_dog - Initializes a dog structure
- * @d: A dog structure.
+ * new_dog - Entry point
  *
- * Return: Nothing
+ * @name: string
+ * @age: float
+ * @owner: string
+ *
+ * Description: 'create new dog.'
+ *
+ * Return: dog_t
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-    dog_t *dog;
-    dog = malloc(sizeof(dog_t));
-    if (dog == NULL)
-    {
-        return (NULL);
-    }
-    dog->age = age;
-    dog->name = scopy(name);
-    if (!dog->name)
-    {
-        free(dog);
-        return (NULL);
-    }
+	dog_t *dog;
 
-    dog->owner = scopy(owner);
-    if (!dog->owner)
-    {
-        free(dog->name);
-        free(dog);
-        
-        return (NULL);
-    }
-    return (dog);
-}
+	dog = malloc(sizeof(dog_t));
+
+	if (dog == NULL)
+		return (NULL);
+
+	dog->age = age;
+
+	dog->name = strCheck(name);
+	if (!dog->name)
+	{
+		free(dog);
+		return (NULL);
+	}
+	dog->owner = strCheck(owner);
+	if (!dog->owner)
+	{
+		free(dog->name);
+		free(dog);
+		return (NULL);
+	}
+
+	return (dog);
