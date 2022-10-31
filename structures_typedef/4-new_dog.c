@@ -6,28 +6,29 @@
 /**
  * scopy - second function
  *
- * @str: string
+ * @scopy: string
+ * @t: string
  *
  * Description: 'set string'
  *
  * Return: string
  */
-char *scopy (char *t)
+char *scopy(char *t)
 {
 int i = 0, j = 0;
 char *m;
 if (t == NULL)
 {
 return (NULL);
-}   
- while (t[i] != '\0')
+}
+while (t[i] != '\0')
 {
 i++;
 }
 m = malloc(sizeof(*t));
 if (m == NULL)
 {
-return(NULL);
+return (NULL);
 }
 while (t[j] != '\0')
 {
