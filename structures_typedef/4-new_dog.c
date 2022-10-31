@@ -5,8 +5,6 @@
 
 /**
  * scopy - second function
- *
- * @scopy: string
  * @t: string
  *
  * Description: 'set string'
