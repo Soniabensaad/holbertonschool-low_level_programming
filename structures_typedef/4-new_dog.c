@@ -53,7 +53,7 @@ dog_t *new_dog(char *name, float age, char *owner)
     dog->name = scopy(name);
     if (!dog->name)
     {
-        free(dog->name);
+        free(dog);
         return (NULL);
     }
 
