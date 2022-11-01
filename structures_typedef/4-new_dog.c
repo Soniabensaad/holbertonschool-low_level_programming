@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * scopy - second function
@@ -9,30 +10,14 @@
  *
  * Return: string
  */
-char *scopy(char *t)
+char *scopy(char *dest, char *src)
 {
-    int i = 0, j = 0;
-    char *m;
-    if (t == NULL)
+    int index = 0;
+    do
     {
-        return (NULL);
-    }
-    while (t[i] != '\0')
-    {
-        i++;
-    }
-    m = malloc(sizeof(*t));
-    if (m == NULL)
-    {
-        return (NULL);
-    }
-    while (t[j] != '\0')
-    {
-        m[j] = t[j];
-        j++;
-    }
-    m[j] = '\0';
-    return (m);
+        *(dest + index) = *(src + index);
+    } while (*(src + index++));
+    return (dest);
 }
 /**
  * new_dog - prints a new dog
@@ -50,22 +35,34 @@ dog_t *new_dog(char *name, float age, char *owner)
     {
         return (NULL);
     }
+    if (name == NULL)
+        dog->name = NULL;
+    else
+    {
+        dog->name = malloc((strlen(name) + 1));
+        if (dog->name == NULL)
+        {
+            free(dog);
+            return (NULL);
+        }
+        dog->name = scopy(dog->name,name);
+    }
+    if (owner == NULL)
+    {
+        dog->owner = NULL;
+    }
+    else
+    {
+        dog->owner = malloc(strlen(owner) +1);
+        if (dog->owner == NULL)
+        {
+            free(dog->name);
+            free(dog);
+            return (NULL);
+        }
+        dog->owner = scopy(dog->owner,owner);
+    }
+
     dog->age = age;
-    dog->name = scopy(name);
-    if (!dog->name)
-    {
-        free(dog->name);
-        free(dog);
-        return (NULL);
-    }
-    dog->owner = scopy(owner);
-    if (!dog->owner)
-    {
-        free(dog->owner);
-        free(dog->name);
-        free(dog);
-        return (NULL);
-    }
-    free(dog);
     return (dog);
 }
