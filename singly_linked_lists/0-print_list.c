@@ -11,7 +11,7 @@ while (h)
 {
 if (h->str)
 {
-printf("[%d]%s\n", h->len, h->str);
+printf("[%u]%s\n", h->len, h->str);
 }
 else
 {
