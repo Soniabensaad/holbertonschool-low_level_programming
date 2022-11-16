@@ -2,7 +2,7 @@
 /**
  * free_listint - free listint_t
  * @head: pointer to a listint_t
- * Return:NULL or adress of new node
+ * Return:free list
  */
 void free_listint(listint_t *head)
 {
