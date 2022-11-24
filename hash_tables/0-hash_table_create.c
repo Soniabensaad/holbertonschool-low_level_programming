@@ -19,11 +19,11 @@ if (new == NULL)
 return (NULL);
 }
 new->size = size;
-new->array = malloc(sizeof(hash_node_t));
+new->array = malloc(sizeof(hash_node_t *) * size);
 if (new->array == NULL)
 {
 return (NULL);
 }
-memset(new->array, 0, sizeof(hash_node_t));
+memset(new->array, 0, sizeof(hash_node_t *) * size);
 return (new);
 }
