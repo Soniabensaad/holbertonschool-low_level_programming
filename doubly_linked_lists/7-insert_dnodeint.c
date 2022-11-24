@@ -26,6 +26,7 @@ new->next = *h;
 (*h)->prev = new;
 }
 *h = new;
+return (*h);
 }
 while (a < (idx - 1))
 {
@@ -41,7 +42,8 @@ temp->next->prev = new;
 new->next = temp->next;
 new->prev = temp;
 temp->next = new;
-}
 return (new);
+}
+return (NULL);
 }
 
