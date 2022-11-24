@@ -30,10 +30,9 @@ return (*h);
 }
 while (a < (idx - 1))
 {
-if(temp)
 {
 temp = temp->next;
-a++; 
+a++;
 }
 }
 if (temp)
