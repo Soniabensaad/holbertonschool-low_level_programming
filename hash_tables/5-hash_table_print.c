@@ -25,14 +25,8 @@ void hash_table_print(const hash_table_t *ht)
                 printf(", ");
             }
         }
-        if (a)
-        {
-            if (!a->next)
-            {
-                printf("'%s': '%s'", a->key, a->value);
-                j = 1;
-            }
-            while (a)
+            
+        while (a)
             {
                 j = 1;
                 printf("'%s': '%s'", a->key, a->value);
@@ -42,7 +36,7 @@ void hash_table_print(const hash_table_t *ht)
                 }
                 a = a->next;
             }
-        }
+        
     }
     printf("}\n");
 }
