@@ -6,3 +6,9 @@
  * @ht: hashtable
  * Return: 1 or 0
  */
+
+void hash_table_print(const hash_table_t *ht)
+{
+    hash_table_t *table = hash_table_t *ht;
+    
+}

@@ -16,6 +16,11 @@ return (0);
 }
 idx = key_index((const unsigned char *) key, ht->size);
 match = ht->array[idx];
+if (match == NULL)
+{
+    return (NULL);
+}
+
 while (match)
 {
 if (strcmp(match->key, key) == 0)
