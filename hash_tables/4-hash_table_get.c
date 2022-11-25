@@ -10,7 +10,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 hash_node_t *match;
 unsigned int idx;
-if (ht == NULL || (key) == 0)
+if (ht == NULL || strlen(key) == 0)
 {
 return (0);
 }
