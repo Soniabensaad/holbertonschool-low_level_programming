@@ -34,7 +34,7 @@ if (a->next)
 printf(", ");
 }
 a = a->next;
-}     
+}
 }
 printf("}\n");
 }
