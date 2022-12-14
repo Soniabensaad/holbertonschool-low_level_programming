@@ -1,5 +1,38 @@
-Recursion in c programming
-What is recursion
-How to implement recursion
-In what situations you should implement recursion
-In what situations you shouldn’t implement recursion
+# 0x07. C - Recursion
+### 0-puts_recursion.c
+A function that prints a string, followed by a new line
+### 1-print_rev_recursion.c
+A function that prints a string in reverse
+### 2-strlen_recursion.c
+A function that returns the length of a string
+### 3-factorial.c
+A function that returns the factorial of a given number
+### 4-pow_recursion.c
+A function that returns the value of x raised to the power of y
+### 5-sqrt_recursion.c
+A function that returns the natural square root of a number
+### 6-is_prime_number.c
+A function that returns 1 if the input integer is a prime number, otherwise return 0
+### 100-is_palindrome.c
+A function that returns 1 if a string is a palindrome and 0 if not
+# 0x07. C - Recursion
+### 0-puts_recursion.c
+A function that prints a string, followed by a new line
+### 1-print_rev_recursion.c
+A function that prints a string in reverse
+### 2-strlen_recursion.c
+A function that returns the length of a string
+### 3-factorial.c
+A function that returns the factorial of a given number
+### 4-pow_recursion.c
+A function that returns the value of x raised to the power of y
+### 5-sqrt_recursion.c
+A function that returns the natural square root of a number
+### 6-is_prime_number.c
+A function that returns 1 if the input integer is a prime number, otherwise return 0
+### 100-is_palindrome.c
+A function that returns 1 if a string is a palindrome and 0 if not
+### 101-wiildcmp.c
+a function that compares two strings and returns 1 or 0
+## Author
+*Sonia Ben Saâd* - [Github](https://github.com/Soniabensaad)
