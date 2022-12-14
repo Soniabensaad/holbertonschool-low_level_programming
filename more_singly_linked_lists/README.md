@@ -1,1 +1,51 @@
-More singly linked lists in c programming 
+# - Singly Linked Lists
+## Project Requirements
+- Formatted with Betty style standards
+- Compiled with gcc 4.8.4 (C90) using the flags `-Wall` `-Werror` `-Wextra` and `-pedantic`
+- No global variables
+- No more than 5 functions per file
+- Allowed C standard library functions are `malloc`, `free`, and `exit`
+- Function prototypes should be included in a header file called `lists.h`
+- Header files should be include guarded
+
+### Project Data Structure
+     /**
+      * struct listint_s - singly linked list
+      * @n: integer
+      * @next: points to the next node
+      *
+      * Description: singly linked list node structure
+      * for Holberton project
+      */
+      typedef struct listint_s
+      {
+      int n;
+      struct listint_s *next;
+      } listint_t;
+## File Descriptions
+**0-print_listint.c:** a function that prints all the elements of a listint_t list
+
+**1-listint_len.c:** a function that returns the number of elements in a linked listint_t list
+
+**2-add_nodeint.c:** a function that adds a new node at the beginning of a listint_t list
+
+**3-add_nodeint_end.c:** a function that adds a new node at the end of a listint_t list
+
+**4-free_listint.c:** a function that free a listint_t list
+
+**5-free_listint2.c:** a function that free a listint_t list
+
+**6-pop_listint.c:** a function that deletes the head node of a listint_t linked list, and returns the head node's data (n)
+
+**7-get_nodeint.c:** a function that returns the nth node of a listint_t linked list
+
+**8-sum_listint.c:** a function that returns the sum of all the data (n) of a listint_t linked list
+
+**9-insert_nodeint.c:** a function that inserts a new node at a given position
+
+**10-delete_nodeint.c:** a function that deletes the node at index index of a listint_t linked list
+**100-reverse_listint.c:** a  function that reverses linked list
+
+
+## Author
+*Sonia Ben Saâd* - [Github](https://github.com/Soniabensaad)
