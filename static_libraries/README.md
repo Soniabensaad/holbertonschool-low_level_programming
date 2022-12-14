@@ -1,5 +1,5 @@
-static libraries in c
-# 0x08. C - Static libraries
+
+# - Static libraries
 ### holberton.h, libholberton.a
 A script creating the static library libholberton.a containing all the functions listed below
 ### create_static_lib.sh
