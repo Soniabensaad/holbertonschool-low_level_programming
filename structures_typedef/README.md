@@ -1,5 +1,5 @@
 
-#- Structures, typedef
+# - Structures, typedef
 ### dog.h
 A header that defines a new type struct dog and type dog_t as a new name for the type struct dog
 ### 1-init_dog.c
