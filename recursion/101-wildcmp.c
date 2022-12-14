@@ -1,3 +1,5 @@
+
+#include "main.h"
 /**
  * wildcmp - a function that compares two strings and returns 1 or 0
  *

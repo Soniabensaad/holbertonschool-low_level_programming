@@ -8,21 +8,21 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-hash_node_t *match;
-unsigned int idx;
-if (ht == NULL || strlen(key) == 0)
-{
-return (0);
-}
-idx = key_index((const unsigned char *) key, ht->size);
-match = ht->array[idx];
-while (match)
-{
-if (strcmp(match->key, key) == 0)
-{
-return (match->key);
-}
-match = match->next;
-}
-return (NULL);
+    hash_node_t *match;
+    unsigned int idx;
+    if (ht == NULL || strlen(key) == 0)
+    {
+        return (0);
+    }
+    idx = key_index((const unsigned char *)key, ht->size);
+    match = ht->array[idx];
+    while (match)
+    {
+        if (strcmp(match->key, key) == 0)
+        {
+            return (match->key);
+        }
+        match = match->next;
+    }
+    return (NULL);
 }
