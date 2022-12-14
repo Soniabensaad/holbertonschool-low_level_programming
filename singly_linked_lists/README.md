@@ -1,4 +1,4 @@
-# 0x11 - Singly Linked Lists
+# - Singly Linked Lists
 ## Project Requirements
 - Formatted with Betty style standards
 - Compiled with gcc 4.8.4 (C90) using the flags `-Wall` `-Werror` `-Wextra` and `-pedantic`
