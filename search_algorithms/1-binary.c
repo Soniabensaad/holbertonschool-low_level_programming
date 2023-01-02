@@ -1,0 +1,56 @@
+#include "search_algos.h"
+/**
+ * linear_search -  searches for a value in an array
+ *@array: array of integer
+ *@size: size of array
+ *@value: value of array
+ * Return: value
+ */
+void print_arr(int *array, int start, int end)
+{
+
+    printf("Searching in array : ");
+    for (; start <= end; start++)
+    {
+        printf("%d", array[start]);
+        if (start != end)
+        {
+            printf(", ");
+        }
+    }
+    printf("\n");
+
+
+}
+int binary_search(int *array, size_t size, int value)
+{
+    int low = 0;
+    int high = size - 1;
+    int middle;
+    if (array == NULL)
+    {
+        return (-1);
+    }
+    
+    while (low <= high)
+    {
+        print_arr(array, low, high);
+        
+        middle = (low + high) / 2;
+        if (array[middle] == value)
+        {
+            return (middle);
+        }
+        else if (array[middle] > value)
+        {
+            high = middle - 1;
+        }
+        else
+        {
+            low = middle + 1 ;
+        }
+    }
+    return (-1);
+
+
+}
