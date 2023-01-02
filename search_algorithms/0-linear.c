@@ -22,12 +22,12 @@ return (-1);
 }
 else if (array[i] != value)
 {
-printf("value  checked array[%ld] = [%d]\n", i, array[i]);
+printf("Value  checked array[%ld] = [%d]\n", i, array[i]);
 j++;
 }
 else
 {
-printf("value  checked array[%ld] = [%d]\n", i, array[i]);
+printf("Value  checked array[%ld] = [%d]\n", i, array[i]);
 break;
 }
 }
