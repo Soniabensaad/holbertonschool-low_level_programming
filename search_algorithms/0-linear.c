@@ -6,7 +6,7 @@
  */
 int linear_search(int *array, size_t size, int value)
 {
-    long unsigned int i;
+   size_t i;
 
     if (array == NULL)
     {
