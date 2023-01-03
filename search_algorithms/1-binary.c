@@ -6,14 +6,14 @@
  *@value: value of array
  * Return: value
  */
-void print_arr(int *array, int start, int end)
+void print_arr(int *array, int s, int e)
 {
 
     printf("Searching in array : ");
-    for (; start <= end; start++)
+    for (; s <= e; s++)
     {
-        printf("%d", array[start]);
-        if (start != end)
+        printf("%d", array[s]);
+        if (s != e)
         {
             printf(", ");
         }
@@ -22,31 +22,31 @@ void print_arr(int *array, int start, int end)
 }
 int binary_search(int *array, size_t size, int value)
 {
-    int low ;
-    int high ;
-    int middle;
+    int l ;
+    int h ;
+    int m;
     if (array == NULL)
     {
         return (-1);
     }
-    low = 0;
-    high = (int)size - 1;
-    while (low <= high)
+    l = 0;
+    h = (int)size - 1;
+    while (l <= h)
     {
-        middle = (low + high) / 2;
-        print_arr(array, low, high);
+        middle = (l + h) / 2;
+        print_arr(array, l, h);
     
-        if (array[middle] < value)
+        if (array[m] < value)
         {
-            low = middle + 1 ;
+            l = m + 1 ;
         }
-        else if (array[middle] > value)
+        else if (array[m] > value)
         {
-            high = middle - 1;
+            h = m - 1;
         }
         else
         {
-           return(middle);
+           return(m);
         }
     }
     return (-1);
