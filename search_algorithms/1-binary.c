@@ -30,7 +30,7 @@ int binary_search(int *array, size_t size, int value)
         return (-1);
     }
     low = 0;
-    high = size - 1;
+    high = (int)size - 1;
     while (low <= high)
     {
         middle = (low + high) / 2;
