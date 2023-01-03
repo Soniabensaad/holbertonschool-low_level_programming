@@ -19,8 +19,6 @@ void print_arr(int *array, int start, int end)
         }
     }
     printf("\n");
-
-
 }
 int binary_search(int *array, size_t size, int value)
 {
