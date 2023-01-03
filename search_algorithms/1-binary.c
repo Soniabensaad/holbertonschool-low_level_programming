@@ -22,14 +22,15 @@ void print_arr(int *array, int start, int end)
 }
 int binary_search(int *array, size_t size, int value)
 {
-    int low = 0;
-    int high = size - 1;
+    int low ;
+    int high ;
     int middle;
     if (array == NULL)
     {
         return (-1);
     }
-    
+    int low = 0;
+    int high = size - 1;
     while (low <= high)
     {
         middle = (low + high) / 2;
