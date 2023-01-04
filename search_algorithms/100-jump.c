@@ -22,7 +22,7 @@ j = jumpy;
 jumpy += step;
 }
 printf("Value found between indexes [%ld] and [%ld]\n", j, jumpy);
-if (jumpy >= size - 1)
+if (jumpy > size - 1)
 {
 jumpy = size - 1;
 }
